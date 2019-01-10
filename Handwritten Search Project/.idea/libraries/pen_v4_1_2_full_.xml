@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="pen-v4.1.2_full-">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SPenSDK41_Demo/build/intermediates/exploded-aar/pen-v4.1.2_full/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SPenSDK41_Demo/build/intermediates/exploded-aar/pen-v4.1.2_full/jars/libs/spenshape.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SPenSDK41_Demo/build/intermediates/exploded-aar/pen-v4.1.2_full/jars/libs/vip_sdk_recognition.jar!/" />
+      <root url="file://$PROJECT_DIR$/SPenSDK41_Demo/build/intermediates/exploded-aar/pen-v4.1.2_full/res" />
+      <root url="jar://$PROJECT_DIR$/SPenSDK41_Demo/build/intermediates/exploded-aar/pen-v4.1.2_full/jars/libs/com.c2ddrawbitmap.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SPenSDK41_Demo/build/intermediates/exploded-aar/pen-v4.1.2_full/jars/libs/sprengine.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SPenSDK41_Demo/build/intermediates/exploded-aar/pen-v4.1.2_full/jars/libs/recognitionengine.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

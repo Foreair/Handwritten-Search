@@ -1,0 +1,3 @@
+include ':SPenSDK41_Demo'
+//include ':spen41_sdk'
+//project(":spen41_sdk").projectDir=new File('../../SDK')
