@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PenSample1_2_PenSetting" >
+
+    <LinearLayout
+        android:id="@+id/tool_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/penBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:background="@drawable/selector_tool_bg"
+            android:contentDescription="@string/description"
+            android:src="@drawable/selector_pen" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/spenViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/spenViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnPreset"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_btn"
+            android:scaleType="fitXY"
+            android:src="@drawable/circle_btn_favorite_pen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/btnEditPreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="19dp"
+                android:gravity="center"
+                android:text="EDIT"
+                android:textColor="#fe4702"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#ffeaeaea" >
+                <LinearLayout
+                    android:id="@+id/layoutPreset"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="14dp"
+                    android:visibility="gone" >
+                    <ImageButton
+                        android:id="@+id/btnAdd"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/add_favorite_pen" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

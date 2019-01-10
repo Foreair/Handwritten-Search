@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.samsung.spensdk4light.example"
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+    splits{
+        abi{
+            enable true
+            reset()
+            include'armeabi'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile files('libs/sdk-v1.0.0.jar')
+    //compile project(':spen41_sdk')
+	compile(name:'pen-v4.1.2_light', ext:'aar')
+}

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shapePropertiesLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:background="#fff4f4f4" >
+
+    <TextView
+        android:id="@+id/tvTitleDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Shape/Line Properties"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_below="@+id/tvTitleDialog"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/fillColorView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tvColor"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fill Color: " />
+
+                <Spinner
+                    android:id="@+id/spFillColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LineColorView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvLineColor"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Line Color: " />
+
+                <Spinner
+                    android:id="@+id/spLineColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvWidth"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Width Line: " />
+
+                <EditText
+                    android:id="@+id/tbWidth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvCompound"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Compound Type: " />
+
+                <Spinner
+                    android:id="@+id/spCompType"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvDashType"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dash Type: " />
+
+                <Spinner
+                    android:id="@+id/spDashType"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/arrowSetting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvArrowBeginType"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Arrow Begin Type: " />
+
+                    <Spinner
+                        android:id="@+id/spArrowBeginType"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvArrowBeginSize"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Arrow Begin Size: " />
+
+                    <Spinner
+                        android:id="@+id/spArrowBeginSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvArrowEndType"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Arrow End Type: " />
+
+                    <Spinner
+                        android:id="@+id/spArrowEndType"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvArrowEndSize"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Arrow End Size: " />
+
+                    <Spinner
+                        android:id="@+id/spArrowEndSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btnOK"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</RelativeLayout>
